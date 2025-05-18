@@ -31,7 +31,12 @@ public class Weapon : MonoBehaviour
 
             if (target)
             {
-                ScoreManager.Instance.AddScore(target.TargetValue);
+                if (!target.WasHit)
+                {
+
+                    ScoreManager.Instance.AddScore(target.TargetValue);
+                    target.MarkAsHit();
+                }
 
             }
 
