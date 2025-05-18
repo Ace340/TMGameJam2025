@@ -26,7 +26,14 @@ public class Weapon : MonoBehaviour
 
         if (Physics.Raycast(origin, direction, out RaycastHit hit, shootDistance))
         {
-            Debug.Log($"Hit: {hit.collider.name}");
+
+            Target target = hit.collider.gameObject.GetComponent<Target>();
+
+            if (target)
+            {
+                ScoreManager.Instance.AddScore(target.TargetValue);
+
+            }
 
         }
     }

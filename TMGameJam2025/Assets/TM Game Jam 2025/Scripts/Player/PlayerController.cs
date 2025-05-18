@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
     private void RotateTowardsMouse()
     {
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-        Plane groundPlane = new Plane(Vector3.up, Vector3.zero); // y=0
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
 
         if (groundPlane.Raycast(ray, out float enter))
         {
