@@ -10,7 +10,6 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        // Dispara solo cuando se hace click izquierdo
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             ShootRay();
