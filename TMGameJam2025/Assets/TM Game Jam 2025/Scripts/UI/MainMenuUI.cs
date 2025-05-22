@@ -8,6 +8,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private Button _quitButton;
     [SerializeField] private Button _aboutButton;
 
+
     private void Awake()
     {
         _playButton.onClick.AddListener(() =>
@@ -19,4 +20,6 @@ public class MainMenuUI : MonoBehaviour
             Application.Quit();
         });
     }
+
+    
 }
