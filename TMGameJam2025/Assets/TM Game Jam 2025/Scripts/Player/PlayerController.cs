@@ -115,4 +115,22 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Floor"))
+        {
+            moveSpeed = 2;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Floor"))
+        {
+            moveSpeed = 5;
+        }
+    }
+
 }

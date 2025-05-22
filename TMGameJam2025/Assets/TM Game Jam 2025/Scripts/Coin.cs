@@ -5,7 +5,10 @@ using System.Collections;
 public class Coin : MonoBehaviour
 {
 
-    [SerializeField] AudioSource coinound;
+
+
+    [SerializeField] GameObject coin;
+    [SerializeField] AudioSource coinsound;
 
 
 
@@ -14,18 +17,17 @@ public class Coin : MonoBehaviour
 
 
     void OnTriggerEnter(Collider other)
+
+
+
     {
+        Debug.Log("hay colision");
         if (other.gameObject.CompareTag("Player"))
         {
             ScoreManager.Instance.AddScore(50);
-            StartCoroutine(PlaySoundAndDisable());
+            coin.SetActive(false);
+            coinsound.Play();
         }
     }
 
-    IEnumerator PlaySoundAndDisable()
-    {
-        coinound.Play();
-        yield return new WaitForSeconds(coinound.clip.length);
-        gameObject.SetActive(false);
-    }
 }
