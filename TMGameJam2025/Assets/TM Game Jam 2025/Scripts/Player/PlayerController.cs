@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 lastPosition;
 
+    private float defaultMoveSpeed = 5f;
+
     void Awake()
     {
         controls = new PlayerInputActions();
@@ -111,7 +113,7 @@ public class PlayerController : MonoBehaviour
             if (direction.sqrMagnitude > 0.01f)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(direction);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 20f * Time.deltaTime);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 20f * Time.fixedDeltaTime);
             }
         }
     }
@@ -129,7 +131,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Floor"))
         {
-            moveSpeed = 5;
+            moveSpeed = defaultMoveSpeed;
         }
     }
 
