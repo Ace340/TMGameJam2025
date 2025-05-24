@@ -6,6 +6,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI timeText;
 
+    public bool startTime;
+    private float startTimeValue;
     void Update()
     {
         UpdateScore();
@@ -19,10 +21,22 @@ public class UIManager : MonoBehaviour
 
     private void UpdateTime()
     {
-        float time = Time.time;
-        int minutes = Mathf.FloorToInt(time / 60f);
-        int seconds = Mathf.FloorToInt(time % 60f);
 
-        timeText.text = $"Time: {minutes:00}:{seconds:00}";
+        if (startTime)
+        {
+            float time = Time.time - startTimeValue;
+
+            int minutes = Mathf.FloorToInt(time / 60f);
+            int seconds = Mathf.FloorToInt(time % 60f);
+
+            timeText.text = $"Time: {minutes:00}:{seconds:00}";
+
+        }
+    }
+
+    public void StartTimer()
+    {
+        startTimeValue = Time.time;
+        startTime = true;
     }
 }
