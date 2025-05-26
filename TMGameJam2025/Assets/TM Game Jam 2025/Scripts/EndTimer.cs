@@ -11,7 +11,7 @@ public class EndTimer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            uIManager.startTime = false;
+            uIManager.ShowFinalScore(ScoreManager.Instance.Score); 
         }
     }
 }
