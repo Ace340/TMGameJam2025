@@ -871,6 +871,18 @@ PrefabInstance:
       propertyPath: finalScoreText
       value: 
       objectReference: {fileID: 1975970366}
+    - target: {fileID: 5727242838619722566, guid: a96f9d5e7eedcf046aac4e62d1386c3c, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727242838619722566, guid: a96f9d5e7eedcf046aac4e62d1386c3c, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727242838619722566, guid: a96f9d5e7eedcf046aac4e62d1386c3c, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 8170828123086690459, guid: a96f9d5e7eedcf046aac4e62d1386c3c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.852594
