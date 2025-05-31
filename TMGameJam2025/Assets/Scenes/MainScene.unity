@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 72deae4d18418f94688abef8e8483df0, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2196,6 +2196,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0000005, y: 4, z: 0.5300007}
   m_Center: {x: 0.0000022053719, y: 2, z: 0.0149997175}
+--- !u!65 &189635667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095760599}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 1.0000001, z: 4.0000005}
+  m_Center: {x: 0, y: 0.49999988, z: 0.00000031987892}
 --- !u!1 &191946455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6731059809158789430, guid: b6b2b89245f204f41b46fe69e519c292, type: 3}
@@ -13257,27 +13278,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.49999997, y: 0.5020764, z: 0.49999997}
   m_Center: {x: -0.000017166138, y: 0.25103813, z: -8.918668e-16}
---- !u!65 &1095760607
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095760599}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4, y: 1.0000001, z: 4.0000005}
-  m_Center: {x: 0, y: 0.49999988, z: 0.00000031987892}
 --- !u!1001 &1100620353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27214,7 +27214,7 @@ PrefabInstance:
       addedObject: {fileID: 1095760604}
     - targetCorrespondingSourceObject: {fileID: 9106625319049876092, guid: b6b2b89245f204f41b46fe69e519c292, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1095760607}
+      addedObject: {fileID: 189635667}
     - targetCorrespondingSourceObject: {fileID: 2804581362581369434, guid: b6b2b89245f204f41b46fe69e519c292, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1095760603}
